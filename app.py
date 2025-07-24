@@ -41,6 +41,7 @@ if uploaded_file is not None:
 
     # Get the prediction from your model and convert to a diagnosis
     prediction = cnn.predict(processed_image)[0] ### YOUR CODE HERE
+    st.write(prediction)
     pred_diagnosis = "Pneumonia" if prediction == 1 else "Not Pneumonia" ### YOUR CODE HERE
 
     # Display the processed image
